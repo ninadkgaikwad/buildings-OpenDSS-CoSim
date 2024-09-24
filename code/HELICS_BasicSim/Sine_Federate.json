@@ -1,0 +1,13 @@
+{
+  "core_type": "zmq",
+  "name": "Sine_Federate",
+  "publications": [
+    {
+      "global": true,
+      "key": "Sine_Federate/Sine_Value",
+      "required": true,
+      "type": "double"
+    }
+  ],
+  "timeDelta": 1.0
+}

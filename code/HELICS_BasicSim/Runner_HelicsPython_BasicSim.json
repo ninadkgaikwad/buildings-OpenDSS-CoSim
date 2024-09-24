@@ -1,0 +1,28 @@
+{
+  "broker": true,
+  "logging": {
+        "level": "debug",
+        "file": "helics_log.txt"
+    },
+  "federates": [
+    {
+      "directory": ".",
+      "exec": "python Sine_Federate.py",
+      "host": "localhost",
+      "name": "Sine_Federate"
+    },
+    {
+      "directory": ".",
+      "exec": "python Line_Federate.py",
+      "host": "localhost",
+      "name": "Line_Federate"
+    },
+    {
+      "directory": ".",
+      "exec": "python Recorder_Federate.py",
+      "host": "localhost",
+      "name": "Recorder_Federate"
+    }
+  ],
+  "name": "HelicsPython_BasicSim_Runner"
+}

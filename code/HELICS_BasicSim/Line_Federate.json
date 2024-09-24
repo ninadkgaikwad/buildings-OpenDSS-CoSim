@@ -1,0 +1,21 @@
+{
+  "core_type": "zmq",
+  "name": "Line_Federate",
+  "subscriptions": [
+    {
+      "global": true,
+      "key": "Sine_Federate/Sine_Value",
+      "required": true,
+      "type": "double"
+    }
+  ],
+    "publications": [
+    {
+      "global": true,
+      "key": "Line_Federate/Line_Value",
+      "required": true,
+      "type": "double"
+    }
+  ],
+  "timeDelta": 1.0
+}

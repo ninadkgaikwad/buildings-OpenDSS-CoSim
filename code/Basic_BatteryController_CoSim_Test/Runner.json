@@ -1,0 +1,29 @@
+{
+  "federates": [
+    {
+      "directory": ".",
+      "exec": "helics_broker -f 3 --loglevel=7",
+      "host": "localhost",
+      "name": "broker"
+    },
+    {
+      "directory": ".",
+      "exec": "python -u battery_dynamics.py",
+      "host": "localhost",
+      "name": "BatteryDynamics"
+    },
+    {
+      "directory": ".",
+      "exec": "python -u battery_control.py",
+      "host": "localhost",
+      "name": "BatteryControl"
+    },
+    {
+      "directory": ".",
+      "exec": "python -u battery_visualization.py",
+      "host": "localhost",
+      "name": "BatteryVisualization"
+    }
+  ],
+  "name": "co_simulation_case"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "battery_control_federate",
+  "coreType": "zmq",
+  "initIterations": 1,
+  "publications": [
+    {
+      "key": "control/decision",
+      "type": "double",
+      "global": true
+    }
+  ],
+  "subscriptions": [
+    {
+      "key": "battery/SOC",
+      "type": "double"
+    }
+  ]
+}
